@@ -54,3 +54,25 @@ footer {
         display: block;
     }
 }
+
+.menu-button {
+    display: none;  /* Hides the button on larger screens */
+    background-color: #0275d8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-button {
+        display: block;  /* Shows the button on smaller screens */
+    }
+    nav ul {
+        display: none;  /* Initially hides the menu on smaller screens */
+    }
+    nav ul li {
+        display: block;  /* Stacks the links vertically */
+    }
+}

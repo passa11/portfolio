@@ -8,9 +8,11 @@
 </head>
 <body>
     <header>
-        <h1>Prabesh Paswan</h1>
-        <p>Web Developer</p>
+        <h1>John Doe</h1>
+        <p>Developer | Designer | Content Creator</p>
     </header>
+    <!-- Menu button for smaller screens -->
+    <button class="menu-button">Menu</button>
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
@@ -32,10 +34,20 @@
     </section>
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:pasaprobes@gmail.com">pasaprobes@gmail.com.com</a></p>
+        <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
     </section>
     <footer>
-        <p>© 2024 Prabesh Paswan</p>
+        <p>© 2024 John Doe</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menu = document.querySelector('nav ul');
+            const menuButton = document.querySelector('.menu-button');
+
+            menuButton.addEventListener('click', function() {
+                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
 </body>
 </html>
