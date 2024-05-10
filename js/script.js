@@ -1,4 +1,4 @@
-{/* <script>
+{ <script>
     document.addEventListener('DOMContentLoaded', function() {
         const menu = document.querySelector('nav ul');
         const menuButton = document.querySelector('.menu-button');
@@ -7,4 +7,4 @@
             menu.style.display = menu.style.display === 'block' ? 'none' : 'block'}
         );
     });
-</script> */}
+</script> }
