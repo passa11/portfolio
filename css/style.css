@@ -1,78 +1,307 @@
-/* Basic reset */
+/* General Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    padding: 20px;
+body, html {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #fff;
+    background: #121212; /* Dark background for better contrast */
 }
 
-header, nav, section, footer {
-    margin-bottom: 20px;
+a {
+    color: #9ad0ec;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #d4e157;
+}
+
+/* Header and Navigation Styles */
+header {
+    background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+    padding: 20px 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h1 {
-    color: #0275d8;
+    font-size: 2.5em;
+    font-weight: 300;
+    display: flex;
 }
+
+.header-content{
+    margin-left: 100px;
+}
+
 
 nav ul {
     list-style: none;
-    background: #333;
-    text-align: center;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
+    margin-left: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-    display: inline-block;
+    font-size: 1.2em;
+    color: inherit;
+    opacity: 0.9;
 }
 
-section {
-    background: #f4f4f4;
+nav ul li a:hover {
+    opacity: 1;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    background: #253341;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0; /* Adjust spacing between icons */
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.sidebar ul li a img {
+    display: block;
+    width: 30px; /* Size of the logos */
+    height: 30px;
+    margin: auto; /* Center logos inside the anchor tags */
+}
+
+.sidebar ul li a:hover {
+    background: #1ca1f2;
+    transform: translateX(10px);
+}
+
+
+/* Main Content Styles */
+main {
+    margin-left: 100px; /* Same as sidebar width */
     padding: 20px;
+    min-height: 100vh;
 }
 
+.panel {
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    transition: background 0.5s;
+}
+
+.panel:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.bio-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+}
+
+.bio-content h2 {
+    margin-bottom: 10px;
+}
+
+/* Skills Section Styles */
+.skills-shwdn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.skills-shwdn a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #253341; /* Dark background */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.skills-shwdn a:hover {
+    background-color: #1ca1f2; /* Lighter background on hover */
+    transform: translateY(-5px);
+}
+
+.skills-shwdn img {
+    width: 60px; /* Adjust size of the logos */
+    margin-bottom: 10px;
+}
+
+.skills-shwdn p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.header-content{
+    margin-left: 50px;
+}
+
+.panel h2 {
+    margin-bottom: 20px;
+}
+
+/* Additional CSS for My Work Section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.gallery a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #253341; /* Dark background */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.gallery a:hover {
+    background-color: #1ca1f2; /* Lighter background on hover */
+    transform: translateY(-5px);
+}
+
+.gallery img {
+    width: 60px; /* Adjust size of the logos */
+    margin-bottom: 10px;
+}
+
+.gallery p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Additional CSS for Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1e1e1e;
+    color: #fff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0fdbff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+
+/* Footer Styles */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: white;
+    padding: 20px 0;
+    background: #253341;
 }
 
-@media screen and (max-width: 768px) {
-    nav ul li {
-        display: block;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header, main {
+        padding: 20px;
     }
-}
 
-.menu-button {
-    display: none;  /* Hides the button on larger screens */
-    background-color: #0275d8;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-    .menu-button {
-        display: block;  /* Shows the button on smaller screens */
-    }
     nav ul {
-        display: none;  /* Initially hides the menu on smaller screens */
+        flex-direction: column;
+        align-items: center;
     }
+
     nav ul li {
-        display: block;  /* Stacks the links vertically */
+        margin: 10px 0;
     }
+
+    .sidebar {
+        width: 100px;
+    }
+
+    main {
+        margin-left: 100px;
+    }
+
+    .gallery {
+       grid-template-columns: 1fr;
+    } 
 }
