@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prabesh Paswan's Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/php.css">
 </head>
 <body>
     <div class="universe">
@@ -18,14 +19,14 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="https://drive.google.com/file/d/17yLY1EivlQM-ZNQZK0YpTAwZWXCclmwQ/view?usp=sharing" target="_blank">Resume</a></li>
+                    <li><a href="https://drive.google.com/file/d/1dlWBVZhMmGkYjd5Uk6Du6PVeiLUUsE7B/view?usp=sharing" target="_blank">Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <aside class="sidebar">
             <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100088671827571&sk=about_life_events" target="_blank"><img src="./pics/fb-logo.jpg" alt="FB"></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100088671827571" target="_blank"><img src="./pics/fb-logo.png" alt="FB"></a></li>
                 <li><a href="https://instagram.com/_prabeshpaswan" target="_blank"><img src="./pics/ig-logo.png" alt="IG"></a></li>
                 <li><a href="https://www.linkedin.com/in/prabesh-paswan-73834b307/" target="_blank"><img src="./pics/linkedin-logo.png" alt="LinkedIn"></a></li>
                 <li><a href="https://github.com/passa11" target="_blank"><img src="./pics/github-logo.png" alt="GitHub"></a></li>
@@ -58,11 +59,11 @@
             </section>
             <section id="contact" class="panel">
                 <h2>Contact Me</h2>
-                <form action="submit.php" method="post">
-                    Name <input type="text" name="name" placeholder="Your Name" required>
-                    Your Company/Organization <input type="text" name="org" placeholder="Your Company/Organization Name">
-                    Email <input type="email" name="email" placeholder="Your Email" required>
-                    Message <textarea name="message" placeholder="Write your message here..." required></textarea>
+                <form action="./php/submit.php" method="post">
+                    <label>Name</label> <input type="text" name="name" placeholder="Your Name" required>
+                    <label>Your Company/Organization</label> <input type="text" name="org" placeholder="Your Company/Organization Name">
+                    <label>Email</label> <input type="email" name="email" placeholder="Your Email" required>
+                    <label>Message</label> <textarea name="message" placeholder="Write your message here..." required></textarea>
                     <button type="submit">Send</button>
                 </form>
             </section>
