@@ -9,6 +9,7 @@ use PHPMailer\PHPMailer\SMTP;
 
 $mail = new PHPMailer(true);
 
+
 $mail->isSMTP();
 $mail->SMTPAuth = true;
 
@@ -28,5 +29,7 @@ $mail->body = $message;
 $mail->send();
 
 echo "email sent";
+header("Location: index.html");
+exit;
 
 ?>
