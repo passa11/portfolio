@@ -1,8 +1,21 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//             const menu = document.querySelector('nav ul');
-//             const menuButton = document.querySelector('.menu-button');
+const btn = document.getElementById('button');
 
-//             menuButton.addEventListener('click', function() {
-//                 menu.style.display = menu.style.display === 'block' ? 'none' : 'block'; 
-//             });
-//         });
+document.getElementById('form').addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  btn.value = 'Sending...';
+
+  const serviceID = 'default_service';
+  const templateID = 'template_2hqcue9';
+
+  emailjs.sendForm(serviceID, templateID, this).then(
+    () => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    },
+    (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    }
+  );
+});

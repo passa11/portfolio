@@ -58,19 +58,30 @@
                 </div>
             </section>
             <section id="contact" class="panel">
-                <h2>Contact Me (currently not working)</h2>
-                <form action="./php/submit.php" method="post">
-                    <label>Name</label> <input type="text" name="name" placeholder="Your Name" required readonly>
-                    <label>Your Company/Organization</label> <input type="text" name="org" readonly placeholder="Your Company/Organization Name">
-                    <label>Email</label> <input type="email" name="email" placeholder="Your Email" required readonly>
-                    <label>Message</label> <textarea name="message" placeholder="Write your message here..." required readonly></textarea>
-                    <button type="submit" readonly>Send</button>
+                <h2>Contact Me</h2>
+                <form method="post" id="form">
+                    <label>Name</label> <input type="text" id="name" name="name" placeholder="Your Name/Your Organization name" required >
+                    <label>Email</label> <input type="email" id="email" name="email" placeholder="Your Email" required >
+                    <label>Subject</label> <input type="text" id="subject" name="subject" placeholder="Your topic" required>
+                    <label>Message</label> <textarea name="message" id="message" placeholder="Your message here.." required></textarea>
+                    <input type="submit" id="button" value="Send Email" >
                 </form>
             </section>
         </main>
         <footer>
-            &copy; <a href="#">Prabesh Paswan</a> 2024
+            &copy; 2024 <a href="#">Prabesh Paswan</a>
         </footer>
     </div>
 </body>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "09KYEWThsT-qjGHLr",
+            });
+        })();
+    </script>
+    <script src="./js/script.js"></script>
 </html>

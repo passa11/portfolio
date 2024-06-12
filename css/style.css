@@ -225,9 +225,9 @@ form {
     padding: 20px;
 }
 
-.form-group {
+/* .form-group {
     margin-bottom: 20px;
-}
+} */
 
 label {
     display: block;
@@ -253,7 +253,7 @@ textarea {
     min-height: 150px;
 }
 
-button {
+#button {
     padding: 10px 20px;
     background-color: #40bfe6;
     border: none;
@@ -263,11 +263,11 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
+#button:hover {
     background-color: #3eec47;
 }
 
-button:focus {
+#button:focus {
     outline: none;
 }
 
