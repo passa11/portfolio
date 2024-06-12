@@ -225,10 +225,6 @@ form {
     padding: 20px;
 }
 
-/* .form-group {
-    margin-bottom: 20px;
-} */
-
 label {
     display: block;
     margin-bottom: 5px;
@@ -270,7 +266,6 @@ textarea {
 #button:focus {
     outline: none;
 }
-
 
 
 /* Footer Styles */
