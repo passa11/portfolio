@@ -1,103 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prabesh Paswan's Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <div class="universe">
-        <!--------------------------------------- header ------------------------------------------------------>
-        <header>
-            <div class="header-content">
-                <h1><a href="#">Prabesh Paswan</a></h1>
-                <h3><a href="https://en.wikipedia.org/wiki/Front-end_web_development" target="_blank">Front end developer</a></h3>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="https://drive.google.com/file/d/1uWecGd8WcvgMOstmO6NORiGGDAiQhbtL/view?usp=sharing" target="_blank">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>open-folder-portfolio</title>
+    <meta name="description" content="Lovable Generated Project" />
+    <meta name="author" content="Lovable" />
 
-         <!--------------------------------------- sidebar ------------------------------------------------------>
-        <aside class="sidebar">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/prabesh-paswan" target="_blank"><img src="./pics/linkedin-logo.png" alt="LinkedIn"></a></li>
-                <li><a href="https://github.com/passa11" target="_blank"><img src="./pics/github-logo.png" alt="GitHub"></a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100088671827571&mibextid=ZbWKwL" target="_blank"><img src="./pics/fb-logo.png" alt="facebook"></a></li>
-                <li><a href="https://instagram.com/_prabeshpaswan" target="_blank"><img src="./pics/ig-logo.png" alt="instagram"></a></li>
-                
-            </ul>
-        </aside>
+    <meta property="og:title" content="open-folder-portfolio" />
+    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-         <!--------------------------------------- body ------------------------------------------------------>
-        <main>
-             <!--------------------------------------- about me ------------------------------------------------------>
-            <section id="about" class="panel">
-                    <div class="bio-content">
-                        <h2>About Me</h2>
-                        <p>I am a creative front-end web developer with a passion for pushing the boundaries of technology and design.</p>
-                </div>
-            </section>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
 
-             <!--------------------------------------- skills ------------------------------------------------------>
-            <section id="skills" class="panel">
-                <h2>Skills</h2>
-                    <div class="skills-shwdn">
-                        <a href="https://en.wikipedia.org/wiki/html" target="_blank"><img src="./pics/html-logo.png" alt="html-logo">HTML5</a>
-                        <a href="https://en.wikipedia.org/wiki/css" target="_blank"><img src="./pics/css-logo.png" alt="CSS-logo">CSS3</a>
-                        <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img src="./pics/js-logo.png" alt="JS-logo">JS</a>
-                        <a href="https://en.wikipedia.org/wiki/WordPress" target="_blank"><img src="./pics/wp-logo.png" alt="WP-logo">WordPress</a>
-                        <a href="https://en.wikipedia.org/wiki/php" target="_blank"><img src="./pics/php-logo.png" alt="PHP-logo">PHP</a>
-                        <a href="https://en.wikipedia.org/wiki/sql" target="_blank"><img src="./pics/sql-logo.png" alt="MySQL-logo">MySQL</a>
-                </div>
-            </section>
-
-             <!--------------------------------------- works/projects ------------------------------------------------------>
-            <section id="projects" class="panel">
-                <h2>My Work</h2>
-                <div class="gallery">
-                    <a href="https://elibrary-4547c.web.app/" target="_blank"><img src="./pics/elibrary.jpg" alt="Project eLibrary">eLibrary</a>
-                    <!-- More projects -->
-                </div>
-            </section>
-
-             <!--------------------------------------- contact form ------------------------------------------------------>
-            <section id="contact" class="panel">
-                <h2>Contact Me</h2>
-                <form method="post" id="form">
-                    <label>Name</label> <input type="text" id="name" name="name" placeholder="Your Name/Your Organization name" required >
-                    <label>Email</label> <input type="email" id="email" name="email" placeholder="Your Email" required >
-                    <label>Subject</label> <input type="text" id="subject" name="subject" placeholder="Your topic" required>
-                    <label>Message</label> <textarea name="message" id="message" placeholder="Your message here.." required></textarea>
-                    <input type="submit" id="button" value="Send Email" >
-                </form>
-            </section>
-        </main>
-
-         <!--------------------------------------- footer ------------------------------------------------------>
-        <footer>
-            &copy; 2024 <a href="#">Prabesh Paswan</a>
-        </footer>
-    </div>
-</body>
-
- <!--------------------------------------- js ------------------------------------------------------>
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init({
-                publicKey: "09KYEWThsT-qjGHLr",
-            });
-        })();
-    </script>
-    <script src="./js/script.js"></script>
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
