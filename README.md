@@ -1,2 +1,7 @@
-This is my portfolio made from scratch using HTML, CSS and JS.
-Be sure to check it out: prabeshpaswan.com.np and feel free to contact me!
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
